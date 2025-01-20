@@ -16,6 +16,6 @@ try:
     tasks = api.get_tasks(filter="today | overdue | no due date")
     count = countTasks(tasks)
     #print('%{{B#de4c4a}} {0[4]} %{{B-}}%{{B#f49c18}} {0[3]} %{{B-}}%{{B#4073d6}} {0[2]} %{{B-}}%{{B#444444}} {0[1]} %{{B-}}'.format(count))
-    print('{{"text": "<span background=\\"#de4c4a\\"> {0[4]} </span><span background=\\"#f49c18\\"> {0[3]} </span><span background=\\"#4073d6\\"> {0[2]} </span><span background=\\"#444444\\"> {0[1]} </span>", "class": "todoist"}}'.format(count))
+    print('{{"text": "<span background=\\"#de4c4a\\" line_height=\\"26624\\"> {0[4]} </span><span background=\\"#f49c18\\"> {0[3]} </span><span background=\\"#4073d6\\"> {0[2]} </span><span background=\\"#444444\\"> {0[1]} </span>", "class": "todoist"}}'.format(count), flush=True)
 except:
-    print(' ERROR ')
+    print(' ERROR ', flush=True)

@@ -16,8 +16,8 @@ The same module is available for polybar [here](https://github.com/jbirnick/poly
 3. Copy-paste the following example configuration into your waybar config:
    ```json
    "custom/todoist": {
-     "exec": "python -u ~/Coding/waybar-todoist/waybar-todoist.py",
-     "exec-on-even": false,
+     "exec": "python ~/Coding/waybar-todoist/waybar-todoist.py",
+     "exec-on-event": false,
      "return-type": "json",
      "interval": 20,
      "on-click": "gtk-launch todoist",
