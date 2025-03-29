@@ -19,7 +19,7 @@ The same module is available for polybar [here](https://github.com/jbirnick/poly
      "exec": "python ~/Coding/waybar-todoist/waybar-todoist.py",
      "exec-on-event": false,
      "return-type": "json",
-     "interval": 20,
+     "interval": 10,
      "on-click": "gtk-launch todoist",
      "tooltip": false
    }
